@@ -23,13 +23,13 @@
 <!--                <attribute name="groups">kyimport.group_digitom_warehouseman,kyimport.group_digitom_director,kyimport.group_digitom_executive_assistant,base.group_system</attribute>-->
 <!--            </xpath>-->
             <!-- for pk trading only -->
-            <xpath expr="//button[@name='285']" position="attributes">
-                <attribute name="groups">kyimport.group_digitom_warehouseman,kyimport.group_digitom_director,kyimport.group_digitom_executive_assistant,base.group_system</attribute>
-            </xpath>
+            <!-- <xpath expr="//button[@name='285']" position="attributes">-->
+                <!-- <attribute name="groups">kyimport.group_digitom_warehouseman,kyimport.group_digitom_director,kyimport.group_digitom_executive_assistant,base.group_system</attribute>-->
+            <!--</xpath>-->
             <!-- for kyliane only -->
-<!--            <xpath expr="//button[@name='284']" position="attributes">-->
-<!--                <attribute name="groups">kyimport.group_digitom_warehouseman,kyimport.group_digitom_director,kyimport.group_digitom_executive_assistant,base.group_system</attribute>-->
-<!--            </xpath>-->
+            <xpath expr="//button[@name='284']" position="attributes">
+               <attribute name="groups">kyimport.group_digitom_warehouseman,kyimport.group_digitom_director,kyimport.group_digitom_executive_assistant,base.group_system</attribute>
+            </xpath>
 <!--            <xpath expr="//button[@name='action_view_stock_move_lines']" position="attributes">-->
 <!--                <attribute name="groups">kyimport.group_digitom_warehouseman,kyimport.group_digitom_director,kyimport.group_digitom_executive_assistant,base.group_system</attribute>-->
 <!--            </xpath>-->
