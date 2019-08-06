@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+    	<record model="ir.module.category" id="module_category_digitom">
+            <field name="name">DIGITOM</field>
+            <field name="sequence">1100</field>
+        </record>
+
+        <record id="group_digitom_warehouseman" model="res.groups">
+            <field name="name">Gestionnaire de stock</field>
+            <field name="category_id" ref="module_category_digitom"/>
+        </record>
+        <record id="group_digitom_assistant" model="res.groups">
+            <field name="name">Assistante</field>
+            <field name="category_id" ref="module_category_digitom"/>
+        </record>
+        <record id="group_digitom_salesman" model="res.groups">
+            <field name="name">Commercial</field>
+            <field name="category_id" ref="module_category_digitom"/>
+        </record>
+        <record id="group_digitom_executive_assistant" model="res.groups">
+            <field name="name">Assistante de direction</field>
+            <field name="category_id" ref="module_category_digitom"/>
+            <field name="implied_ids" eval="[(4, ref('group_digitom_assistant'))]"/>
+        </record>
+        <record id="group_digitom_without_stock_executive_assistant" model="res.groups">
+            <field name="name">Assistante de direction (sans stock)</field>
+            <field name="category_id" ref="module_category_digitom"/>
+            <field name="implied_ids" eval="[(4, ref('group_digitom_assistant'))]"/>
+        </record>
+        <record id="group_digitom_sales_manager" model="res.groups">
+            <field name="name">Directeur commercial</field>
+            <field name="category_id" ref="module_category_digitom"/>
+            <field name="implied_ids" eval="[(4, ref('group_digitom_salesman'))]"/>
+        </record>
+        <record id="group_digitom_director" model="res.groups">
+            <field name="name">Directeur</field>
+            <field name="category_id" ref="module_category_digitom"/>
+            <field name="implied_ids" eval="[(4, ref('group_digitom_executive_assistant')),(4, ref('group_digitom_sales_manager')),(4, ref('group_digitom_warehouseman'))]"/>
+        </record>
+    </data>
+    <data noupdate="0">
+        <!-- sale order rules -->
+        <record model="ir.rule" id="sales_order_group_digitom_salesman_rule">
+            <field name="name">Sale order: see only own sale orders</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="groups" eval="[(4, ref('group_digitom_salesman'))]"/>
+            <field name="domain_force">
+                [('create_uid', '=', user.id)]
+            </field>
+        </record>
+        <record model="ir.rule" id="sales_order_group_digitom_sales_manager_rule">
+            <field name="name">Sale order: see all sale orders</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="groups" eval="[(4, ref('group_digitom_sales_manager'))]"/>
+            <field name="domain_force">
+                [(1, '=', 1)]
+            </field>
+        </record>
+        <!-- sale order line rules -->
+        <record model="ir.rule" id="sales_order_line_group_digitom_salesman_rule">
+            <field name="name">Sale order: see only own sale order lines</field>
+            <field name="model_id" ref="sale.model_sale_order_line"/>
+            <field name="groups" eval="[(4, ref('group_digitom_salesman'))]"/>
+            <field name="domain_force">
+                [('create_uid', '=', user.id)]
+            </field>
+        </record>
+        <record model="ir.rule" id="sales_order_line_group_digitom_sales_manager_rule">
+            <field name="name">Sale order: see all sale order lines</field>
+            <field name="model_id" ref="sale.model_sale_order_line"/>
+            <field name="groups" eval="[(4, ref('group_digitom_sales_manager'))]"/>
+            <field name="domain_force">
+                [(1, '=', 1)]
+            </field>
+        </record>
+        <!-- invoice rules -->
+        <record model="ir.rule" id="account_invoice_group_digitom_salesman_rule">
+            <field name="name">Invoice: see only own invoices</field>
+            <field name="model_id" ref="sale.model_account_invoice"/>
+            <field name="groups" eval="[(4, ref('group_digitom_salesman'))]"/>
+            <field name="domain_force">
+                [('create_uid', '=', user.id)]
+            </field>
+        </record>
+        <record model="ir.rule" id="account_invoice_group_digitom_sales_manager_rule">
+            <field name="name">Invoice: see all invoices</field>
+            <field name="model_id" ref="sale.model_account_invoice"/>
+            <field name="groups" eval="[(4, ref('group_digitom_sales_manager'))]"/>
+            <field name="domain_force">
+                [(1, '=', 1)]
+            </field>
+        </record>
+        <!-- invoice lines rules -->
+        <record model="ir.rule" id="account_invoice_line_group_digitom_salesman_rule">
+            <field name="name">Invoice: see only own invoice lines</field>
+            <field name="model_id" ref="sale.model_account_invoice_line"/>
+            <field name="groups" eval="[(4, ref('group_digitom_salesman'))]"/>
+            <field name="domain_force">
+                [('create_uid', '=', user.id)]
+            </field>
+        </record>
+        <record model="ir.rule" id="account_invoice_line_group_digitom_sales_manager_rule">
+            <field name="name">Invoice: see all sales invoice lines</field>
+            <field name="model_id" ref="sale.model_account_invoice_line"/>
+            <field name="groups" eval="[(4, ref('group_digitom_sales_manager'))]"/>
+            <field name="domain_force">
+                [(1, '=', 1)]
+            </field>
+        </record>
+        <!-- pos rules -->
+        <record model="ir.rule" id="pos_config_group_pos_user_rule">
+            <field name="name">Til: see only own til</field>
+            <field name="model_id" ref="model_pos_config"/>
+            <field name="groups" eval="[(4, ref('point_of_sale.group_pos_user'))]"/>
+            <field name="domain_force">
+                [('pos_user_id', '=', user.id)]
+            </field>
+        </record>
+        <!-- inventory rule -->
+        <record model="ir.ui.menu" id="stock.menu_stock_root">
+            <field name="groups" eval="[(3, ref('group_digitom_executive_assistant'))]"/>
+        </record>
+
+    </data>
+
+</odoo>

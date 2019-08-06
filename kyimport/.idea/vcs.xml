@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../sale-workflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../src/enterprise" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../src/odoo" vcs="Git" />
+    <mapping directory="$USER_HOME$/projects/kyimport_datarecovery" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="attendance_recap_report_wizard">
+        <field name="name">Sale trip report</field>
+        <field name="model">sales_trip.trip.report.wizard</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Sale trip Report">
+                <group>
+                    <group>
+                        <field name="commercial_ids" widget="many2many_tags" options="{'no_create_edit': True}"/>
+                        <!-- <field name="customer_payment_term_id"/> -->
+                        <field name="customer_payment_term_ids" widget="many2many_tags" options="{'no_create_edit': True}"/>
+                        <field name="trip_day"/>
+                        <field name="see_non_endebted_customers"/>
+                    </group>
+                    <!-- <group>
+                        <field name="customer_ids" mode="tree">
+                            <tree string="Customers list">
+                                <field name="name"/>
+                                <field name="billing_type"/>
+                            </tree>
+                        </field>
+                    </group> -->
+                </group>
+                <footer>
+                    <button name="get_report" string="Get Report" type="object" class="oe_highlight"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="action_sales_trip_trip_report_wizard"
+                name="Sale trip"
+                res_model="sales_trip.trip.report.wizard"
+                view_mode="form"
+                target="new"/>
+
+    <menuitem
+        id="sales_trip_reports_menu"
+        name="Reports"
+        parent="sales_trip_menu"/>
+
+    <menuitem action="action_sales_trip_trip_report_wizard"
+              id="sales_trip_trip_report_wizard"
+              parent="sales_trip_reports_menu"/>
+
+
+</odoo>

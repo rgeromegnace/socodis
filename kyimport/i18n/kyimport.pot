@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* kyimport
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-30 16:38+0000\n"
+"PO-Revision-Date: 2019-01-30 16:38+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_pos_config_pos_user_id
+msgid "Assigned user"
+msgstr ""
+
+#. module: kyimport
+#: model:res.groups,name:kyimport.group_digitom_assistant
+msgid "Assistante"
+msgstr ""
+
+#. module: kyimport
+#: model:res.groups,name:kyimport.group_digitom_executive_assistant
+msgid "Assistante de direction"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.ui.view,arch_db:kyimport.view_confirm_stock_picking
+msgid "Cancel"
+msgstr ""
+
+#. module: kyimport
+#: model:res.groups,name:kyimport.group_digitom_salesman
+msgid "Commercial"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.ui.view,arch_db:kyimport.view_confirm_stock_picking
+msgid "Confirm"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.actions.act_window,name:kyimport.action_confirm_stock_picking
+#: model:ir.actions.act_window,name:kyimport.confirm_stock_picking
+#: model:ir.ui.view,arch_db:kyimport.view_confirm_stock_picking
+msgid "Confirm Stock Pickings"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model,name:kyimport.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.module.category,name:kyimport.module_category_digitom
+msgid "DIGITOM"
+msgstr ""
+
+#. module: kyimport
+#: model:res.groups,name:kyimport.group_digitom_director
+msgid "Directeur"
+msgstr ""
+
+#. module: kyimport
+#: model:res.groups,name:kyimport.group_digitom_sales_manager
+msgid "Directeur commercial"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_res_partner_fax
+#: model:ir.model.fields,field_description:kyimport.field_res_users_fax
+msgid "Fax"
+msgstr ""
+
+#. module: kyimport
+#: model:res.groups,name:kyimport.group_digitom_warehouseman
+msgid "Gestionnaire de stock"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard_id
+msgid "ID"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_stock_picking_confirm_wizard_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_product_product_pmpa
+msgid "PMPA"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model,name:kyimport.model_product_product
+msgid "Product"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_res_partner_siret
+#: model:ir.model.fields,field_description:kyimport.field_res_users_siret
+msgid "Siret"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model.fields,field_description:kyimport.field_res_partner_phone2
+#: model:ir.model.fields,field_description:kyimport.field_res_users_phone2
+msgid "Téléphone 2"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model,name:kyimport.model_stock_picking_confirm_wizard
+msgid "Wizard - Stock Picking Confirm"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.ui.view,arch_db:kyimport.view_confirm_stock_picking
+msgid "or"
+msgstr ""
+
+#. module: kyimport
+#: model:ir.model,name:kyimport.model_pos_config
+msgid "pos.config"
+msgstr ""
+

@@ -1,0 +1,437 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sales_trip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-15 18:30+0000\n"
+"PO-Revision-Date: 2019-05-15 18:30+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "+120"
+msgstr "+120"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "0-30"
+msgstr "0-30"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "30-60"
+msgstr "30-60"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "60-90"
+msgstr "60-90"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "90-120"
+msgstr "90-120"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "<strong>Commercial</strong>:"
+msgstr "<strong>Commercial</strong>:"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "<strong>Du</strong>:"
+msgstr "<strong>Du</strong>:"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "<strong>Total due</strong>:"
+msgstr "<strong>Total dû</strong>:"
+
+#. module: sales_trip
+#: model:res.groups,name:sales_trip.group_sales_trip_assistant
+msgid "Assistante"
+msgstr "Assistante"
+
+#. module: sales_trip
+#: model:res.groups,name:sales_trip.group_sales_trip_executive_assistant
+msgid "Assistante de direction"
+msgstr "Assistante de direction"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_res_partner_billing_type
+#: model:ir.model.fields,field_description:sales_trip.field_res_users_billing_type
+msgid "Billing type"
+msgstr "Type de facturation"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.attendance_recap_report_wizard
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_dialog_view
+msgid "Close"
+msgstr "Fermer"
+
+#. module: sales_trip
+#: model:res.groups,name:sales_trip.group_sales_trip_salesman
+msgid "Commercial"
+msgstr "Commercial"
+
+#. module: sales_trip
+#: selection:res.partner,billing_type:0
+msgid "Comptant"
+msgstr "Comptant"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_template_view_form
+msgid "Compute trips"
+msgstr "Créer les tournées"
+
+#. module: sales_trip
+#: model:ir.actions.server,name:sales_trip.ir_cron_automatic_compute_trips_job_ir_actions_server
+#: model:ir.cron,cron_name:sales_trip.ir_cron_automatic_compute_trips_job
+#: model:ir.cron,name:sales_trip.ir_cron_automatic_compute_trips_job
+msgid "Compute trips Job"
+msgstr "Compute trips Job"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "Cond Pmt"
+msgstr "Cond Pmt"
+
+#. module: sales_trip
+#: model:ir.model,name:sales_trip.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_create_uid
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_create_uid
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_create_uid
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_create_date
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_create_date
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_create_date
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_customer_ids
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_customer_ids
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_customer_ids
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_template_view_form
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_view_form
+msgid "Customers"
+msgstr "Clients"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_template_view_form
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_view_form
+msgid "Customers list"
+msgstr "Liste des clients"
+
+#. module: sales_trip
+#: model:res.groups,name:sales_trip.group_sales_trip_director
+msgid "Directeur"
+msgstr "Directeur"
+
+#. module: sales_trip
+#: model:res.groups,name:sales_trip.group_sales_trip_sales_manager
+msgid "Directeur commercial"
+msgstr "Directeur commercial"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_report_sales_trip_trip_report_view_display_name
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_display_name
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_display_name
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_display_name
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_display_name
+msgid "Display Name"
+msgstr "Nom à afficher"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "Echéance future"
+msgstr "Echéance future"
+
+#. module: sales_trip
+#: selection:res.partner,billing_type:0
+msgid "En compte"
+msgstr "En compte"
+
+#. module: sales_trip
+#: selection:res.partner,billing_type:0
+msgid "FCA"
+msgstr "FCA"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.attendance_recap_report_wizard
+msgid "Get Report"
+msgstr "Récupérer le rapport"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_report_sales_trip_trip_report_view_id
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_id
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_id
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_id
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_id
+msgid "ID"
+msgstr "ID"
+
+#. module: sales_trip
+#: selection:sales_trip.trip_template,trip_day:0
+msgid "Jeudi"
+msgstr "Jeudi"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_name
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_name
+msgid "Label"
+msgstr "Libellé"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_report_sales_trip_trip_report_view___last_update
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard___last_update
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip___last_update
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard___last_update
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_write_uid
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_write_uid
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_write_uid
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_write_date
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_write_date
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_write_date
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: sales_trip
+#: selection:sales_trip.trip_template,trip_day:0
+msgid "Lundi"
+msgstr "Lundi"
+
+#. module: sales_trip
+#: selection:sales_trip.trip_template,trip_day:0
+msgid "Mardi"
+msgstr "Mardi"
+
+#. module: sales_trip
+#: selection:sales_trip.trip_template,trip_day:0
+msgid "Mercredi"
+msgstr "Mercredi"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_message
+msgid "Message"
+msgstr "Message"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "No correspondance for this saler."
+msgstr "Pas de correspondance pour ce vendeur."
+
+#. module: sales_trip
+#: code:addons/sales_trip/wizard/trip/sales_trip_trip_report.py:91
+#, python-format
+msgid "No matched trips"
+msgstr "Aucune tournée correspondante"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "Nom du partenaire"
+msgstr "Nom du partenaire"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_template_view_form
+#: model:ir.ui.view,arch_db:sales_trip.sales_trip_trip_view_form
+msgid "Others informations"
+msgstr "Autres informations"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "Page:"
+msgstr "Page:"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_customer_payment_term_ids
+msgid "Payment terms"
+msgstr "Conditions de paiement"
+
+#. module: sales_trip
+#: model:ir.ui.menu,name:sales_trip.sales_trip_reports_menu
+msgid "Reports"
+msgstr "Rapports"
+
+#. module: sales_trip
+#: model:ir.actions.act_window,name:sales_trip.action_sales_trip_trip_report_wizard
+#: model:ir.ui.menu,name:sales_trip.sales_trip_trip_report_wizard
+msgid "Sale trip"
+msgstr "Tournée"
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.attendance_recap_report_wizard
+msgid "Sale trip Report"
+msgstr "Rapport de tournée"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_commercial_id
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_commercial_id
+msgid "Saler"
+msgstr "Vendeur"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_commercial_ids
+msgid "Salers"
+msgstr "Commerciaux"
+
+#. module: sales_trip
+#: model:ir.model,name:sales_trip.model_sales_trip_trip
+#: model:ir.ui.menu,name:sales_trip.sales_trip_menu
+msgid "Sales Trip"
+msgstr "Tournées"
+
+#. module: sales_trip
+#: model:ir.model,name:sales_trip.model_sales_trip_trip_template
+msgid "Sales Trip Template"
+msgstr "Modèle de tournée"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_see_non_endebted_customers
+msgid "See non endebted customers also"
+msgstr "Voir également les clients ne devant rien"
+
+#. module: sales_trip
+#: code:addons/sales_trip/wizard/trip/sales_trip_trip_report.py:89
+#, python-format
+msgid "There is not trip that match your query."
+msgstr "Aucune tourneé correspondant aux critères"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_dialog_wizard_title
+msgid "Title"
+msgstr "Titre"
+
+#. module: sales_trip
+#: code:addons/sales_trip/wizard/trip/sales_trip_trip_report.py:403
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: sales_trip
+#: code:addons/sales_trip/wizard/trip/sales_trip_trip_report.py:392
+#, python-format
+msgid "Total "
+msgstr "Total "
+
+#. module: sales_trip
+#: model:ir.ui.view,arch_db:sales_trip.trip_report_view
+msgid "Tournée"
+msgstr "Tournée"
+
+#. module: sales_trip
+#: model:ir.module.category,name:sales_trip.module_category_sales_trip
+msgid "Tournées"
+msgstr "Tournées"
+
+#. module: sales_trip
+#: model:ir.actions.act_window,name:sales_trip.sales_trip_trip_action
+#: model:ir.ui.menu,name:sales_trip.sales_trip_trip_submenu
+msgid "Trip"
+msgstr "Tournée"
+
+#. module: sales_trip
+#: model:ir.actions.report,name:sales_trip.trip_report
+msgid "Trip Report"
+msgstr "Rapport de tournées"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_report_wizard_trip_day
+msgid "Trip date"
+msgstr "Date de tournée"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_template_trip_day
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_trip_day
+msgid "Trip day"
+msgstr "Jour de tournée"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_sales_trip_trip_trip_day_week_number
+msgid "Trip day week number"
+msgstr "Jour de la semaine de tournée"
+
+#. module: sales_trip
+#: model:ir.actions.act_window,name:sales_trip.sales_trip_trip_template_action
+#: model:ir.ui.menu,name:sales_trip.sales_trip_trip_template_submenu
+msgid "Trip template"
+msgstr "Modèle de tournée"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_res_partner_trip_template_ids
+#: model:ir.model.fields,field_description:sales_trip.field_res_users_trip_template_ids
+msgid "Trip templates"
+msgstr "Modèles de tournée"
+
+#. module: sales_trip
+#: model:ir.model.fields,field_description:sales_trip.field_res_partner_trip_ids
+#: model:ir.model.fields,field_description:sales_trip.field_res_users_trip_ids
+#: model:ir.ui.menu,name:sales_trip.sales_trip_trip_menu
+msgid "Trips"
+msgstr "Tournées"
+
+#. module: sales_trip
+#: code:addons/sales_trip/wizard/trip/sales_trip_trip_report.py:336
+#, python-format
+msgid "Unknown Partner"
+msgstr "Client inconnu"
+
+#. module: sales_trip
+#: selection:sales_trip.trip_template,trip_day:0
+msgid "Vendredi"
+msgstr "Vendredi"
+
+#. module: sales_trip
+#: code:addons/sales_trip/wizard/trip/sales_trip_trip_report.py:98
+#, python-format
+msgid "Warning"
+msgstr "Avertissement"
+
+#. module: sales_trip
+#: model:ir.model,name:sales_trip.model_report_sales_trip_trip_report_view
+msgid "report.sales_trip.trip_report_view"
+msgstr "report.sales_trip.trip_report_view"
+
+#. module: sales_trip
+#: model:ir.model,name:sales_trip.model_sales_trip_dialog_wizard
+msgid "sales_trip.dialog.wizard"
+msgstr "sales_trip.dialog.wizard"
+
+#. module: sales_trip
+#: model:ir.model,name:sales_trip.model_sales_trip_trip_report_wizard
+msgid "sales_trip.trip.report.wizard"
+msgstr "sales_trip.trip.report.wizard"
+

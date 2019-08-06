@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="sales_trip_trip_template_view_form" model="ir.ui.view">
+        <field name="name">Trip template Form</field>
+        <field name="model">sales_trip.trip_template</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button type="object" name="compute_trips" string="Compute trips" class="btn-primary"/>
+                </header>
+                <group>
+                    <field name="name"/>
+                    <field name="commercial_id"/>
+                </group>
+                <group>
+                    <field name="trip_day"/>
+                </group>
+                <notebook>
+                    <page string="Customers">
+                        <field name="customer_ids" mode="tree">
+                            <tree string="Customers list">
+                                <field name="name"/>
+                                <field name="city"/>
+                                <field name="zip"/>
+                                <field name="phone"/>
+                                <field name="billing_type"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Others informations">
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record id="sales_trip_trip_template_view_tree" model="ir.ui.view">
+        <field name="name">Trip template List</field>
+        <field name="model">sales_trip.trip_template</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="commercial_id"/>
+                <field name="trip_day"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sales_trip_trip_template_view_search" model="ir.ui.view">
+        <field name="name">Trip template Search</field>
+        <field name="model">sales_trip.trip_template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+</odoo>

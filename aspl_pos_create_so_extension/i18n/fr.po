@@ -1,0 +1,465 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* aspl_pos_create_so_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 03:04+0000\n"
+"PO-Revision-Date: 2019-02-19 03:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:138
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_sale_order_amount_due
+#, python-format
+msgid "Amount Due"
+msgstr "Montant dû"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:95
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:305
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:332
+#, python-format
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:240
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:279
+#, python-format
+msgid "City"
+msgstr "City"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/js/screen.js:377
+#, python-format
+msgid "Configuration Required"
+msgstr "Configuration Requise"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:107
+#: selection:pos.config,sale_order_operations:0
+#, python-format
+msgid "Confirm"
+msgstr "Devis Confirmés"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:30
+#, python-format
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model,name:aspl_pos_create_so_extension.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:329
+#, python-format
+msgid "Continue"
+msgstr "Continuer"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:245
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:284
+#, python-format
+msgid "Country"
+msgstr "Pays"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:10
+#, python-format
+msgid "Create Quotation"
+msgstr "Créer un devis"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:7
+#, python-format
+msgid "Create Sales Order"
+msgstr "Créer un bon de commande"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:136
+#, python-format
+msgid "Customer"
+msgstr "Client"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/js/screen.js:143
+#, python-format
+msgid "Discard Sale Order"
+msgstr "Annuler le bon de commande"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_res_users_display_own_sales_order
+msgid "Display Own Sales Order"
+msgstr "Afficher ses propres commandes"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/js/screen.js:144
+#, python-format
+msgid "Do you want to discard the payment of sale order  ?"
+msgstr "Voulez-vous annuler le paiement de la commande  ?"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:99
+#, python-format
+msgid "Done"
+msgstr "Devis traités"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:140
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:175
+#, python-format
+msgid "Edit"
+msgstr "Editer"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:237
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:276
+#, python-format
+msgid "Email"
+msgstr "Email"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/js/models.js:352
+#, python-format
+msgid "Error: Could not Save Changes"
+msgstr "Erreur: Impossible de sauvegarder les modifications"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:211
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:257
+#, python-format
+msgid "Invoice Address"
+msgstr "Adresse de facturation"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:270
+#, python-format
+msgid "Invoice to Different Address"
+msgstr "Facturer avec une autre adresse"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_pos_config_sale_order_last_days
+#: model:ir.ui.view,arch_db:aspl_pos_create_so_extension.ace_view_pos_config_form
+msgid "Load Orders to Last days"
+msgstr "Charger les dernières commandes"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:248
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:287
+#, python-format
+msgid "Mobile"
+msgstr "Mobile"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:111
+#, python-format
+msgid "My Orders"
+msgstr "Mes devis"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:135
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:236
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:275
+#, python-format
+msgid "Name"
+msgstr "Nom"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:212
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:296
+#, python-format
+msgid "Note"
+msgstr "Note"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:69
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:81
+#, python-format
+msgid "Note:"
+msgstr "Note:"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:44
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:302
+#, python-format
+msgid "OK"
+msgstr "OK"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_pos_config_sale_order_operations
+#: model:ir.ui.view,arch_db:aspl_pos_create_so_extension.ace_view_pos_config_form
+msgid "Operation"
+msgstr "Opération"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:137
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:200
+#, python-format
+msgid "Order Date"
+msgstr "Date de commande"
+
+#. module: aspl_pos_create_so_extension
+#: selection:pos.config,sale_order_operations:0
+msgid "Paid"
+msgstr "Payé"
+
+#. module: aspl_pos_create_so_extension
+#: model:product.product,name:aspl_pos_create_so_extension.product_paid_amount
+#: model:product.template,name:aspl_pos_create_so_extension.product_paid_amount_product_template
+msgid "Paid Amount"
+msgstr "Montant payé"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_pos_config_paid_amount_product
+#: model:ir.ui.view,arch_db:aspl_pos_create_so_extension.ace_view_pos_config_form
+msgid "Paid Amount Product"
+msgstr "Produit du montant payé"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:141
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:184
+#, python-format
+msgid "Pay"
+msgstr "Payer"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:249
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:288
+#, python-format
+msgid "Phone"
+msgstr "Téléphone"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/js/screen.js:378
+#, python-format
+msgid "Please configure dummy product for paid amount from POS configuration"
+msgstr "Veuillez configurer le produit factice pour le montant payé de la configuration du PDV"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:319
+#, python-format
+msgid "Press continue to proceed."
+msgstr "Appuyer sur continuer pour poursuivre."
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model,name:aspl_pos_create_so_extension.model_sale_order
+msgid "Quotation"
+msgstr "Devis"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:35
+#, python-format
+msgid "Quotation Created:"
+msgstr "Devis créé:"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:39
+#, python-format
+msgid "Quotation Updated:"
+msgstr "Devis mis à jour:"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:103
+#: selection:pos.config,sale_order_operations:0
+#, python-format
+msgid "Quotations"
+msgstr "Devis ouverts"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_pos_config_sale_order_record_per_page
+#: model:ir.ui.view,arch_db:aspl_pos_create_so_extension.ace_view_pos_config_form
+msgid "Record Per Page"
+msgstr "Enregistrement par page"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:204
+#, python-format
+msgid "Requested Date"
+msgstr "Date demandée"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:197
+#, python-format
+msgid "Sale Order"
+msgstr "Bon de commande"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.ui.view,arch_db:aspl_pos_create_so_extension.ace_view_pos_config_form
+msgid "Sale Order Configurations"
+msgstr "Configurations des bons de commande"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:316
+#, python-format
+msgid "Sale Order Confirmation"
+msgstr "Confirmation des bons de commande"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:17
+#, python-format
+msgid "Sale Orders"
+msgstr "Liste des devis"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:32
+#, python-format
+msgid "Sales Order Created:"
+msgstr "Bons de commande créés:"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:121
+#, python-format
+msgid "Search orders"
+msgstr "Ordre de recherche"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:220
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:259
+#, python-format
+msgid "Select Address"
+msgstr "Sélectionner une adresse"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:231
+#, python-format
+msgid "Ship to Different Address"
+msgstr "Expédier à une adresse différente"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:210
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:218
+#, python-format
+msgid "Shipping Address"
+msgstr "Adresse de livraision"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:241
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:280
+#, python-format
+msgid "States"
+msgstr "Etats"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:318
+#, python-format
+msgid "System have to make delivery order done before creating invoice due to following products of you cart."
+msgstr "System have to make delivery order done before creating invoice due to following products of you cart."
+
+#. module: aspl_pos_create_so_extension
+#: model:product.product,description:aspl_pos_create_so_extension.product_paid_amount
+#: model:product.template,description:aspl_pos_create_so_extension.product_paid_amount_product_template
+msgid "This is a dummy product used user edit the drafted order as paid amount."
+msgstr "Le système doit passer la commande avant la création de la facture en raison des produits suivants de votre panier."
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:139
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model,name:aspl_pos_create_so_extension.model_stock_picking
+msgid "Transfer"
+msgstr "Transférer"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:23
+#, python-format
+msgid "Update Quotation"
+msgstr "Mise à jour du devis"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model,name:aspl_pos_create_so_extension.model_res_users
+msgid "Users"
+msgstr "Utilisateurs"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:55
+#, python-format
+msgid "Validate SO"
+msgstr "Valider le bon de commande"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model.fields,field_description:aspl_pos_create_so_extension.field_pos_config_warehouse_id
+#: model:ir.ui.view,arch_db:aspl_pos_create_so_extension.ace_view_pos_config_form
+msgid "Warehouse"
+msgstr "Entrepôt"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:244
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:283
+#, python-format
+msgid "Zip"
+msgstr "Zip"
+
+#. module: aspl_pos_create_so_extension
+#: model:ir.model,name:aspl_pos_create_so_extension.model_pos_config
+msgid "pos.config"
+msgstr "pos.config"
+
+#. module: aspl_pos_create_so_extension
+#. openerp-web
+#: code:addons/aspl_pos_create_so_extension/static/src/xml/pos.xml:115
+#, python-format
+msgid "yyyy-mm-dd"
+msgstr "yyyy-mm-dd"
+

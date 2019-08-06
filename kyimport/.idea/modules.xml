@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../aces_pos_enlarge_image/.idea/aces_pos_enlarge_image.iml" filepath="$PROJECT_DIR$/../aces_pos_enlarge_image/.idea/aces_pos_enlarge_image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../aspl_pos_create_so_extension/.idea/aspl_pos_create_so_extension.iml" filepath="$PROJECT_DIR$/../aspl_pos_create_so_extension/.idea/aspl_pos_create_so_extension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bi_pos_stock/.idea/bi_pos_stock.iml" filepath="$PROJECT_DIR$/../bi_pos_stock/.idea/bi_pos_stock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../src/enterprise/.idea/enterprise.iml" filepath="$PROJECT_DIR$/../../src/enterprise/.idea/enterprise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kyimport.iml" filepath="$PROJECT_DIR$/.idea/kyimport.iml" />
+      <module fileurl="file://$USER_HOME$/projects/kyimport_datarecovery/.idea/kyimport_datarecovery.iml" filepath="$USER_HOME$/projects/kyimport_datarecovery/.idea/kyimport_datarecovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../src/odoo/.idea/odoo.iml" filepath="$PROJECT_DIR$/../../src/odoo/.idea/odoo.iml" />
+      <module fileurl="file://$USER_HOME$/projects/pktrading_datarecovery/.idea/pktrading_datarecovery.iml" filepath="$USER_HOME$/projects/pktrading_datarecovery/.idea/pktrading_datarecovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pos_create_so/.idea/pos_create_so.iml" filepath="$PROJECT_DIR$/../pos_create_so/.idea/pos_create_so.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pos_warehouse_qty/.idea/pos_warehouse_qty.iml" filepath="$PROJECT_DIR$/../pos_warehouse_qty/.idea/pos_warehouse_qty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../purchase_discount/.idea/purchase_discount.iml" filepath="$PROJECT_DIR$/../purchase_discount/.idea/purchase_discount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rma_ept/.idea/rma_ept.iml" filepath="$PROJECT_DIR$/../rma_ept/.idea/rma_ept.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sale-workflow/.idea/sale-workflow.iml" filepath="$PROJECT_DIR$/../sale-workflow/.idea/sale-workflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sale_order_mass_confirm/.idea/sale_order_mass_confirm.iml" filepath="$PROJECT_DIR$/../sale_order_mass_confirm/.idea/sale_order_mass_confirm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sales_trip/.idea/sales_trip.iml" filepath="$PROJECT_DIR$/../sales_trip/.idea/sales_trip.iml" />
+    </modules>
+  </component>
+</project>

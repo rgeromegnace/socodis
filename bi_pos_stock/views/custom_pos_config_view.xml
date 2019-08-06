@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!--Custom POS Config View-->        
+
+		<record model="ir.ui.view" id="custom_pos_config_extended_form_view">
+			<field name="name">pos.config.form.extended.view</field>
+			<field name="model">pos.config</field>
+			<field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//div[12]" position="after">
+					<br/>
+					<h2>Stock Configuration in POS</h2>
+					<div class="o_setting_right_pane">
+						<group>
+							<field name="pos_display_stock"/>
+							<field name="pos_stock_type"/>
+							<field name="pos_allow_order"/>
+							<field name="pos_deny_order"/>
+						</group>
+					</div>
+					<br/>
+					<h2>Stock Location Configuration</h2>
+					<div class="o_setting_right_pane">
+						<group>
+							<field name="show_stock_location" widget="radio"/>
+						</group>
+					</div>
+				</xpath>  	
+			</field>
+		</record>
+
+		<!-- <record model="ir.ui.view" id="sale_form">
+			<field name="name">sale.order.form.extended.view</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale.view_order_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='partner_invoice_id']" position="after">
+					<field name = "today_date"/>
+					<field name = "created_date"/>    
+				</xpath>  	
+			</field>
+		</record> -->
+		
+		
+	</data>
+</odoo>        

@@ -1,0 +1,17 @@
+.pos .product .enlarge-image {
+    position: absolute;
+    bottom: -13px;
+    right: -5px;
+    vertical-align: top;
+    color: white;
+    line-height: 13px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    z-index: 1000;
+    color: #7f82ac;
+    font-size: 20px;
+}
+
+.pos .product .product-name{
+    width: 84% !important;
+}

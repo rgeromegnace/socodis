@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- unbilled customers wizard: current or at date -->
+    <record id="view_partner_unbilled_customers_wizard" model="ir.ui.view">
+        <field name="name">Unbilled customers</field>
+        <field name="model">contact.unbilled.customers.report.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Choose your number of days">
+                <group>
+                    <group>
+                        <field name="compute_since_days" widget="radio"/>
+                        <field name="since_days" attrs="{'invisible': [('compute_since_days', '=', 0)]}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="open_table" string="Get unbilled customers" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="partner_unbilled_customer_action" model="ir.actions.act_window">
+        <field name="name">Unbilled customers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner.unbilled.customer</field>
+        <field name="view_mode">tree</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="view_partner_unbilled_customer_tree"/>
+        <field name="domain">[('nb_days_without_billing', '>=', 35)]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                If there are unbilled customers, you will see their names.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_report_contacts"
+        name="Report"
+        parent="contacts.menu_contacts"
+        sequence="2"/>
+    <record id="action_partner_unbilled_customers" model="ir.actions.act_window">
+        <field name="name">Unbilled customers Report</field>
+        <field name="res_model">contact.unbilled.customers.report.wizard</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_partner_unbilled_customers_wizard"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_report_unbilled_customers_since_date_contacts"
+        action="action_partner_unbilled_customers"
+        name="Unbilled customers list since a date"
+        parent="menu_report_contacts"
+        sequence="2"/>
+</odoo>

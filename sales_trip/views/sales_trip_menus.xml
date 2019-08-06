@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <act_window
+        id="sales_trip_trip_template_action"
+        name="Trip template"
+        res_model="sales_trip.trip_template"/>
+
+    <act_window
+        id="sales_trip_trip_action"
+        name="Trip"
+        res_model="sales_trip.trip"/>
+
+    <menuitem
+        id="sales_trip_menu"
+        name="Sales Trip"
+        action="sales_trip_trip_template_action"
+        parent=""
+        sequence="5"/>
+
+    <menuitem
+        id="sales_trip_trip_menu"
+        name="Trips"
+        parent="sales_trip_menu"/>
+
+    <menuitem
+        id="sales_trip_trip_submenu"
+        name="Trip"
+        action="sales_trip_trip_action"
+        parent="sales_trip_trip_menu"
+        sequence="1"/>
+
+    <menuitem
+        id="sales_trip_trip_template_submenu"
+        name="Trip template"
+        action="sales_trip_trip_template_action"
+        parent="sales_trip_trip_menu"
+        sequence="2"/>
+
+</odoo>

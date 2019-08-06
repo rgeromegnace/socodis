@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="sales_trip_dialog_view">
+        <field name="name">Information</field>
+        <field name="model">sales_trip.dialog.wizard</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="message"/>
+            </form>
+            <footer>
+                <button string="Close" special="cancel" class="oe_highlight"/>
+            </footer>
+        </field>
+    </record>
+</odoo>

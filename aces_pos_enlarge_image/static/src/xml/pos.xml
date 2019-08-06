@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="Product">
+        <t t-jquery="span.price-tag" t-operation="after">
+            <span class="enlarge-image">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>  
+            </span>
+        </t>         
+    </t>
+
+    <t t-name="ProductImagePopupWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-textinput">
+                <p class="title"><t t-esc='widget.title'></t></p>
+                <div class="product_image">
+                    <!--<img t-att-src="widget.image_url" style="width:230px"/>-->
+                    <img t-att-src="widget.image_url" class="oe_image_small" style="width:500px; height:500px"/>
+                </div>
+                <div class="footer">
+                    <div class="button confirm" style="border-color:red;color:red;">
+                        Done
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

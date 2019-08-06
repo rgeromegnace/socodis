@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="report.paperformat" id="paperformat_trip_report">
+        <field name="name">paperformat.trip.report</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="page_width">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">30</field>
+        <field name="margin_right">5</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">5</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <report id="trip_report"
+            model="sales_trip.trip.report.wizard"
+            string="Trip Report"
+            report_type="qweb-pdf"
+            name="sales_trip.trip_report_view"
+            paperformat="paperformat_trip_report"
+            menu="False"/>
+
+    <template id="trip_report_view">
+        <t t-foreach="commercials" t-as="commercial">
+            <div class="header" style="border-bottom: 2px solid black">
+                <h3 class="text-center">Tournée</h3>
+                <h4 class="text-center">
+                    <strong>Du</strong>:
+                    <t t-esc="trip_day"/>
+                    <strong>Commercial</strong>:
+                    <t t-esc="commercial[0]['commercial_name']"/>
+                    <strong>Total due</strong>:
+                    <t t-esc="commercial[2]['total_customers_debt']"/><span> €</span>
+                </h4>
+            </div>
+            <t t-if="len(commercial[1]['docs']) &gt; 0">
+                <div class="article">
+                    <table class="table table-condensed table-bordered" style="width: 100%">
+                        <thead>
+                            <th class="text-center" style="width: 70%">Nom du partenaire</th>
+                            <th class="text-center" style="width: 15%">Cond Pmt</th>
+                            <th class="text-center" style="width: 15%">Total</th>
+                            <th class="text-center" style="width: 15%">Echéance future</th>
+                            <th class="text-center" style="width: 20%">0-30</th>
+                            <th class="text-center" style="width: 20%">30-60</th>
+                            <th class="text-center" style="width: 20%">60-90</th>
+                            <th class="text-center" style="width: 20%">90-120</th>
+                            <th class="text-center" style="width: 20%">+120</th>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="commercial[1]['docs']" t-as="doc">
+                                <tr>
+                                    <td>
+                                        <span t-esc="doc['customer_name']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Cond Pmt -->
+                                        <span t-esc="doc['customer_payment_term']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Total -->
+                                        <span t-esc="doc['total']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Echéance future -->
+                                        <span t-esc="doc['direction']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- 0-30 -->
+                                        <span t-esc="doc['0-30']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- 30-60 -->
+                                        <span t-esc="doc['30-60']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- 60-90 -->
+                                        <span t-esc="doc['60-90']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- 90-120 -->
+                                        <span t-esc="doc['90-120']"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- +120 -->
+                                        <span t-esc="doc['+120']"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer">
+                    <div class="row text-center" style="border-top: 1px solid black;">
+                        <div class="col-xs-3 col-xs-offset-9 text-right">
+                            <ul class="list-inline" style="margin-top:10px;">
+                                <li>Page:</li>
+                                <li>
+                                    <span class="page"/>
+                                </li>
+                                <li>/</li>
+                                <li>
+                                    <span class="topage"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </t>
+            <t t-else="">
+                <div class="article">
+                    <p align="center">No correspondance for this saler.</p>
+                </div>
+                <div class="footer">
+                    <div class="row text-center" style="border-top: 1px solid black;">
+                        <div class="col-xs-3 col-xs-offset-9 text-right">
+                            <ul class="list-inline" style="margin-top:10px;">
+                                <li>Page:</li>
+                                <li>
+                                    <span class="page"/>
+                                </li>
+                                <li>/</li>
+                                <li>
+                                    <span class="topage"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

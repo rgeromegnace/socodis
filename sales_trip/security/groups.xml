@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+
+        <record model="ir.module.category" id="module_category_sales_trip">
+            <field name="name">Tournées</field>
+            <field name="sequence">1200</field>
+        </record>
+
+        <record id="group_sales_trip_assistant" model="res.groups">
+            <field name="name">Assistante</field>
+            <field name="category_id" ref="module_category_sales_trip"/>
+        </record>
+        <record id="group_sales_trip_salesman" model="res.groups">
+            <field name="name">Commercial</field>
+            <field name="category_id" ref="module_category_sales_trip"/>
+        </record>
+        <record id="group_sales_trip_executive_assistant" model="res.groups">
+            <field name="name">Assistante de direction</field>
+            <field name="category_id" ref="module_category_sales_trip"/>
+            <field name="implied_ids" eval="[(4, ref('group_sales_trip_assistant'))]"/>
+        </record>
+        <record id="group_sales_trip_sales_manager" model="res.groups">
+            <field name="name">Directeur commercial</field>
+            <field name="category_id" ref="module_category_sales_trip"/>
+            <field name="implied_ids" eval="[(4, ref('group_sales_trip_salesman'))]"/>
+        </record>
+        <record id="group_sales_trip_director" model="res.groups">
+            <field name="name">Directeur</field>
+            <field name="category_id" ref="module_category_sales_trip"/>
+            <field name="implied_ids" eval="[(4, ref('group_sales_trip_executive_assistant')),(4, ref('group_sales_trip_sales_manager'))]"/>
+        </record>
+    </data>
+</odoo>
